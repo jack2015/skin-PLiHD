@@ -42,6 +42,9 @@
 		<alias name="HelpMenuListExt1" font="Regular" size="28"/>
 		<alias name="Dreamexplorer" font="Regular" size="30" height="45"/>
 		<alias name="PlayList" font="Regular" size="28" height="38"/>
+		<alias name="AutotimerList" font="Regular" size="22" height="25"/>
+		<alias name="AutotimerListExt0" font="Regular" size="28"/>
+		<alias name="AutotimerListExt1" font="Regular" size="22" height="95"/>
 	</fonts>
 
 	<!-- Colors -->
@@ -1851,7 +1854,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="TimeDateInput" title="Time/Date Input" position="fill" flags="wfNoBorder" >
 		<panel name="PigTemplate"/>
-		<panel name="CancelOKTemplate"/>
 		<widget name="config" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
