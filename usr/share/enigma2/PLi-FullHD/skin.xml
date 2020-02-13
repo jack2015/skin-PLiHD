@@ -152,7 +152,7 @@
 
 	<!-- Volume -->
 
-	<screen name="Volume" title="Volume" position="5,360" size="20,328" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
+	<screen name="Volume" title="Volume" position="80,572" size="20,328" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
 		<widget name="Volume" pixmap="infobar/volumeslider.png" position="2,2" size="15,300" orientation="orBottomToTop" transparent="1" zPosition="1"></widget>
 		<ePixmap pixmap="infobar/vol_box.png" position="0,303" size="20,24" alphatest="blend" zPosition="4"></ePixmap>
 	</screen>
