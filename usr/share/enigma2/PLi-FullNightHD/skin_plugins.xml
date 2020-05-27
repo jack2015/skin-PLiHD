@@ -1164,15 +1164,15 @@
 	<screen name="DevicesMountPanel" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<ePixmap name="menu" pixmap="buttons/key_menu.png" position="1700,1030" size="55,40" alphatest="on" />
-		<widget source="list" render="Listbox" position="780,105" size="1110,800" scrollbarMode="showOnDemand" >
+		<widget source="list" render="Listbox" position="780,105" size="1110,870" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				 MultiContentEntryText(pos = (90, 0), size = (720, 43), color = 0x0058bcff, color_sel = 0x00ffc000, font=0, text = 0),
-				 MultiContentEntryText(pos = (150, 45), size = (660, 78), font=1, flags = RT_VALIGN_TOP, text = 1),
-				 MultiContentEntryText(pos = (790, 0), size = (100, 28), font=2,color = 0x00999999, color_sel = 0x00999999, flags = RT_VALIGN_CENTER, text = 3),
+				 MultiContentEntryText(pos = (90, 0), size = (720, 35), color = 0x0058bcff, color_sel = 0x00ffc000, font=0, text = 0),
+				 MultiContentEntryText(pos = (200, 35), size = (800, 95), font=1, flags = RT_VALIGN_TOP, text = 1),
+				 MultiContentEntryText(pos = (950, 0), size = (100, 28), font=2,color = 0x00999999, color_sel = 0x00999999, flags = RT_VALIGN_CENTER, text = 3),
 				 MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
 				],
-				"fonts": [gFont("Regular", 33),gFont("Regular", 29),gFont("Regular", 25)],
+				"fonts": [gFont("Regular", 32),gFont("Regular", 28),gFont("Regular", 25)],
 				"itemHeight": 130
 				}
 			</convert>
