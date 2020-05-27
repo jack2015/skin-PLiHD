@@ -1119,6 +1119,72 @@
 	<widget name="message_label" font="Regular;36" position="0,0" zPosition="2" valign="center" halign="center" size="375,45" backgroundColor="secondBG" transparent="1"/>
 	</screen>
 
+	<!-- OpenMultiBoot -->
+
+	<screen name="OMBManagerList" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget source="list" render="Listbox" position="780,105" size="1110,560" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand">
+			<convert type="StringList"/>
+		</widget>
+		<widget name="label1" position="800,710" size="1080,40" font="Regular;32"/>
+		<widget name="label2" position="800,760" size="1080,40" font="Regular;32"/>
+		<widget name="nextboot" position="800,810" size="1080,40" font="Regular;32"/>
+		<ePixmap name="menu" pixmap="buttons/key_menu.png" position="1700,1030" size="55,40" alphatest="on" />
+		<ePixmap name="info" pixmap="buttons/key_info.png" position="1770,1030" size="55,40" alphatest="on" />
+		<widget name="key_ok" position="780,900" size="1080,40" font="Regular;28" />
+	</screen>
+
+	<screen name="OMBManagerPreferences" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="config" position="780,105" size="1110,600" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand"/>
+	</screen>
+
+	<screen name="OMBManagerInstall" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget source="list" render="Listbox" position="780,105" size="1110,600" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand">
+			<convert type="StringList"/>
+		</widget>
+		<widget name="info" position="780,770" size="1110,80" font="Regular;32"/>
+	</screen>
+
+	<screen name="OMBManagerAbout" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="about" position="780,105" size="1110,800" font="Regular;30"/>
+	</screen>
+
+	<!-- ServiceAppDetectPlayers -->
+
+	<screen name="ServiceAppDetectPlayers" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="text" position="780,105" size="1110,500" font="Regular;32" halign="center" valign="center" />
+	</screen>
+
+	<!-- MountManager -->
+
+	<screen name="DevicesMountPanel" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<ePixmap name="menu" pixmap="buttons/key_menu.png" position="1700,1030" size="55,40" alphatest="on" />
+		<widget source="list" render="Listbox" position="780,105" size="1110,800" scrollbarMode="showOnDemand" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				 MultiContentEntryText(pos = (90, 0), size = (720, 43), color = 0x0058bcff, color_sel = 0x00ffc000, font=0, text = 0),
+				 MultiContentEntryText(pos = (150, 45), size = (660, 78), font=1, flags = RT_VALIGN_TOP, text = 1),
+				 MultiContentEntryText(pos = (790, 0), size = (100, 28), font=2,color = 0x00999999, color_sel = 0x00999999, flags = RT_VALIGN_CENTER, text = 3),
+				 MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
+				],
+				"fonts": [gFont("Regular", 33),gFont("Regular", 29),gFont("Regular", 25)],
+				"itemHeight": 130
+				}
+			</convert>
+		</widget>
+	</screen>
+
+	<screen name="DeviceMountPanelConf" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="config" position="780,105" size="1110,810" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand"/>
+		<widget name="Linconn" position="0,550" size="780,30" font="Regular;28" halign="center" valign="center"/>
+	</screen>
+
 	<!-- CCCam InfoBar -->
 
 	<screen flags="wfNoBorder" name="EcmInfoScreen" position="0,0" size="1132,37" title="ECM Info" backgroundColor="transpBlack" zPosition="-1">
