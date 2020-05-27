@@ -1126,12 +1126,12 @@
 		<widget source="list" render="Listbox" position="780,105" size="1110,560" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="label1" position="800,710" size="1080,40" font="Regular;32"/>
-		<widget name="label2" position="800,760" size="1080,40" font="Regular;32"/>
-		<widget name="nextboot" position="800,810" size="1080,40" font="Regular;32"/>
-		<ePixmap name="menu" pixmap="buttons/key_menu.png" position="1700,1030" size="55,40" alphatest="on" />
-		<ePixmap name="info" pixmap="buttons/key_info.png" position="1770,1030" size="55,40" alphatest="on" />
-		<widget name="key_ok" position="780,900" size="1080,40" font="Regular;28" />
+		<widget name="label1" position="800,650" size="1080,40" font="Regular;30"/>
+		<widget name="label2" position="800,700" size="1080,40" font="Regular;30"/>
+		<widget name="nextboot" position="780,800" size="1110,40" font="Regular;30"/>
+		<panel name="KeyMenuTemplate"/>
+		<panel name="KeyInfoTemplate"/>
+		<widget name="key_ok" position="780,880" size="1110,40" font="Regular;30" />
 	</screen>
 
 	<screen name="OMBManagerPreferences" position="fill" flags="wfNoBorder">
@@ -1163,7 +1163,7 @@
 
 	<screen name="DevicesMountPanel" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<ePixmap name="menu" pixmap="buttons/key_menu.png" position="1700,1030" size="55,40" alphatest="on" />
+		<panel name="KeyMenuTemplate"/>
 		<widget source="list" render="Listbox" position="780,105" size="1110,870" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
