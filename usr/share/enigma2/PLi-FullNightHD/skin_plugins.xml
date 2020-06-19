@@ -1098,10 +1098,11 @@
 
 	<screen name="CacheFlushSetupMenu" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="config" position="780,105" size="1110,375" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,105" size="1110,425" itemHeight="38" font="Regular;28" zPosition="1" scrollbarMode="showOnDemand"/>
 		<widget name="min_free_kb" position="795,712" size="900,37" font="Regular;27" zPosition="1" valign="center" transparent="1"/>
 		<widget name="slide" position="1755,765" size="27,150" zPosition="1" borderWidth="1" backgroundColor="secondBG" orientation="orBottomToTop"/>
 		<widget name="memory" position="795,885" size="900,37" zPosition="1" valign="center" halign="left" font="Regular;33" transparent="1"/>
+		<widget name="ipkcache" position="0,555" size="780,30" font="Regular;28" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="CacheFlushInfoScreen" position="fill" flags="wfNoBorder">
