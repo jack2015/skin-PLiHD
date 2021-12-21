@@ -430,9 +430,12 @@
 		<widget source="session.CurrentService" render="Label" position="1745,943" size="145,30" backgroundColor="secondBG" font="Regular;28" foregroundColor="foreground" halign="right" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">VideoCodec</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Label" position="1550,985" size="195,33" halign="center" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;28">
+		<widget source="session.FrontendStatus" render="Label" position="1630,985" size="115,33" halign="center" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;28">
 			<convert type="FrontendInfo">SNRdB</convert>
 			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.FrontendStatus" render="Progress" position="1550,993" size="80,15" borderWidth="1" borderColor="grey" zPosition="1">
+			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget source="session.FrontendInfo" render="Label" position="1720,900" size="200,30" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="left" font="Regular;30">
 			<convert type="FrontendInfo">STRING</convert>
