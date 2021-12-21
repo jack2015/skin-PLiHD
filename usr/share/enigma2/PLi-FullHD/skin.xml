@@ -1031,16 +1031,16 @@
 		<panel name="PigTemplate"/>
 		<panel name="KeyMenuTemplate"/>
 		<widget name="config" position="900,105" size="990,345" itemHeight="43" font="Regular;32" scrollbarMode="showOnDemand"/>
-		<widget source="key_red" render="Pixmap" pixmap="buttons/red.png" position="810,110" size="34,34" alphatest="on">
+		<widget source="key_red" render="Pixmap" pixmap="buttons/red.png" position="810,108" size="34,34" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_green" render="Pixmap" pixmap="buttons/green.png" position="810,155" size="34,34" alphatest="on">
+		<widget source="key_green" render="Pixmap" pixmap="buttons/green.png" position="810,153" size="34,34" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="key_yellow" render="Pixmap" pixmap="buttons/yellow.png" position="810,200" size="34,34" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_blue" render="Pixmap" pixmap="buttons/blue.png" position="810,245" size="34,34" alphatest="on">
+		<widget source="key_blue" render="Pixmap" pixmap="buttons/blue.png" position="810,411" size="34,34" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="810,460" size="1080,400" zPosition="3" transparent="1" >

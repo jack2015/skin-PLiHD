@@ -951,7 +951,7 @@
     <widget source="key_yellow" render="Pixmap" pixmap="PLi-HD/buttons/yellow.png" position="540,130" size="26,26" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="key_blue" render="Pixmap" pixmap="PLi-HD/buttons/blue.png" position="540,160" size="26,26" alphatest="on">
+    <widget source="key_blue" render="Pixmap" pixmap="PLi-HD/buttons/blue.png" position="540,265" size="26,26" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
     <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="540,310" size="720,270" zPosition="3" transparent="1" >
