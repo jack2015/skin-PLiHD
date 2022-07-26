@@ -1768,7 +1768,7 @@
 		<panel name="KeyMenuTemplate"/>
 		<panel name="KeyInfoTemplate"/>
 		<widget source="Version" render="Label" position="200,800" size="800,50" font="Regular;36" foregroundColor="secondFG"/>
-		<widget name="config" position="780,123" size="1132,360" font="Regular;33" itemHeight="45" foregroundColor="grey" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="780,123" size="1132,360" font="Regular;25" itemHeight="45" foregroundColor="grey" scrollbarMode="showOnDemand"/>
 		<widget source="introduction" render="Label" position="780,500" size="1132,45" font="Regular;31" halign="center" valign="center" foregroundColor="yellow" zPosition="10"/>
 		<widget source="TxtTemp" render="Label" position="780,622" size="300,37" font="Regular;25" halign="right" valign="center" foregroundColor="grey" zPosition="1"/>
 		<widget source="TxtZielRPM" render="Label" position="780,675" size="300,37" font="Regular;25" halign="right" valign="center" foregroundColor="grey" zPosition="1"/>
