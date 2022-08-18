@@ -1,2 +1,2 @@
 # skin-PLiHD
-skin for the OPENPLi image
+skin for the OPENPLI image
