@@ -56,6 +56,7 @@
     <color name="secondFG" value="#00fcc000"/>
     <color name="selectedBG" value="#06303240"/>
     <color name="selectedFG" value="#00fcc000"/>
+    <color name="selectedFGEvent" value="#00f0f0f0"/>
     <color name="transparent" value="#ff000000"/>
     <color name="transpBlack" value="#54111112"/>
     <color name="transpDark" value="#54242424"/>
@@ -287,9 +288,9 @@
     <panel name="KeyMenuInfoTemplate"/>
     <widget name="list" position="520,70" size="740,600" itemHeight="30" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand"
             serviceInfoFont="Regular;22" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="notavailable"
-            foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060"
+            foregroundColorEventSelected="selectedFGEvent" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060"
             colorEventProgressbar="#004060c0" colorEventProgressbarSelected="#004060ff" progressbarBorderWidth="1" progressbarHeight="8"
-            colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
+            colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="selectedFGEvent"/>
     <widget source="ServiceEvent" render="Label" position="20,350" size="482,20" foregroundColor="transponderinfo" font="Regular;16" valign="center" halign="left" transparent="1" zPosition="1">
       <convert type="TransponderInfo">NoRoot</convert>
     </widget>
@@ -790,9 +791,9 @@
     <panel name="BasicTemplate"/>
     <widget name="list" position="520,70" size="740,450" itemHeight="30" colorServiceDescription="yellow" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand"
             serviceInfoFont="Regular;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="notavailable"
-            foregroundColorEventSelected="white" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060"
+            foregroundColorEventSelected="selectedFGEvent" foregroundColorMarkedSelected="red" backgroundColorMarkedSelected="#04101060"
             colorEventProgressbar="#004060c0" colorEventProgressbarSelected="#004060ff" progressbarBorderWidth="1" progressbarHeight="8"
-            colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="white"/>
+            colorFallbackItem="fallback" colorServiceDescriptionFallback="selectedFG" colorServiceSelectedFallback="selectedFG" colorServiceDescriptionSelectedFallback="selectedFGEvent"/>
     <widget source="session.Event_Now" render="Label" position="20,70" size="480,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
     <convert type="EventName">Name</convert>
     </widget>
@@ -1785,7 +1786,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) // 2, orgpos.y() + 
     <widget name="list" position="520,70" size="740,255" backgroundColor="secondBG" transparent="1"/>
     <eLabel text="Frequency:" position="520,380" size="220,25" backgroundColor="secondBG" transparent="1" font="Regular;20"/>
     <widget name="frequency_value" position="740,380" size="100,25" backgroundColor="secondBG" transparent="1" font="Regular;20"/>
-    <eLabel text="Symbolrate:" position="520,410" size="220,25" backgroundColor="secondBG" transparent="1" font="Regular;20"/>
+    <eLabel text="Symbol rate:" position="520,410" size="220,25" backgroundColor="secondBG" transparent="1" font="Regular;20"/>
     <widget name="symbolrate_value" position="740,410" size="100,25" backgroundColor="secondBG" transparent="1" font="Regular;20"/>
     <eLabel text="FEC:" position="520,440" size="220,25" backgroundColor="secondBG" transparent="1" font="Regular;20"/>
     <widget name="fec_value" position="740,440" size="100,25" backgroundColor="secondBG" transparent="1" font="Regular;20"/>
